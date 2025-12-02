@@ -12,6 +12,12 @@ Python Flask SQLite app
 - Fully responsive flexbox layout
 - Clean, modern look with subtle hover effects
 
+### to run
+
+```
+python app.py
+```
+
 ### to do
 
 - add interactive content

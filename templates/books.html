@@ -1,5 +1,27 @@
 {% extends 'base.html' %} {% block title %}Books{% endblock %} {% block content
 %}
-<h1>Books Page</h1>
-<p>Current progress, status and notes</p>
+<h1>Books</h1>
+<span class="add"><a href="/add_book" title="new book">+</a></span>
+
+<table style="width: 100%">
+  <tr>
+    <th>id</th>
+    <th>Name</th>
+    <th>Author</th>
+    <th>Created</th>
+    <th></th>
+  </tr>
+  {%for book in data%}
+  <tr>
+    <td>{{book[0]}}</td>
+    <td>{{book[1]}}</td>
+    <td>{{book[2]}}</td>
+    <td>{{book[3]}}</td>
+    <td>
+      <a href="/del_book/{{book[0]}}" title="delete book">&lt;Books /&gt;</a>
+    </td>
+  </tr>
+  {%endfor%}
+</table>
+
 {% endblock %}
