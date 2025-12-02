@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}Digital Self Expression{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <style>
+      .content {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'includes/_nav.html' %}
+
+    <div class="content">{% block content %}{% endblock %}</div>
+
+    <footer>
+      <!-- Footer content can also be included from a partial -->
+      <p>&copy; 2025 My Site</p>
+    </footer>
+  </body>
+</html>

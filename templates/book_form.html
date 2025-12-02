@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block title %}Books{% endblock %} {% block content
+%}
+<h1>Book Form</h1>
+<form method="POST">
+  <label>Enter Book Name:</label>
+  <input type="name" name="name" placeholder="Enter book name" required /><br />
+  <label>Enter Author Name:</label>
+  <input
+    type="author"
+    name="author"
+    placeholder="Enter author name"
+    required
+  /><br />
+  <input type="submit" value="submit" /><br />
+</form>
+{% endblock %}

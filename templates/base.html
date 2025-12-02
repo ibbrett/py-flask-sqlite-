@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Comfortably Numb{% endblock %}</title>
+    {% include 'includes/_style.html' %}
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+          <h1>
+            Comfortably Numb
+          </h1>
+        </svg>
+      </div>
+    </header>
+
+    <div class="main-container">
+      {% include 'includes/_nav.html' %}
+
+      <main class="content">
+        {% block content %}
+        <h1>Put content here</h1>
+        <p>
+          This is the main content area. It will expand to fill the remaining
+          space.
+        </p>
+        {% endblock %}
+      </main>
+    </div>
+
+    {% include 'includes/_footer.html' %}
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<nav>
+  <ul>
+    <li>
+      <a
+        class="{% if request.url_rule.endpoint == 'home' %}active{% endif %}"
+        href="{{ url_for('home') }}"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a
+        class="{% if request.url_rule.endpoint == 'blog' %}active{% endif %}"
+        href="{{ url_for('blog') }}"
+        >Blog</a
+      >
+    </li>
+    <li>
+      <a
+        class="{% if request.url_rule.endpoint == 'books' %}active{% endif %}"
+        href="{{ url_for('books') }}"
+        >Books</a
+      >
+    </li>
+  </ul>
+</nav>
+
+<div
+  class="{% if is_active %} active-class {% else %} inactive-class {% endif %}"
+></div>
