@@ -1,6 +1,6 @@
 # Comfortably Numb
 
-a sample Python Flask app
+Python Flask SQLite app
 
 ## Features included:
 
@@ -15,4 +15,4 @@ a sample Python Flask app
 ### to do
 
 - add interactive content
-- implement static floder for style, images, scripts
+- implement static folder for style, images, scripts
