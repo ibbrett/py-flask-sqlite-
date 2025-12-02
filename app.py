@@ -42,6 +42,7 @@ def add_book():
             (name,author) VALUES (?,?)",
                            (name, author))
             books.commit()
+            # books.close()
         return render_template("books.html")
     else:
         return render_template('book_form.html')
@@ -49,15 +50,17 @@ def add_book():
 # Endpoint for deleting a book record
 @app.route("/del_book/<int:id>", methods=["GET"])
 def del_book(id):
+    #return f'Book id: {id}'
     try:
         connect = sqlite3.connect('numb.db')
         connect.execute('DELETE FROM BOOKS WHERE id = ?', (id,))
         connect.commit()
         connect.close()
+        ##return f'Book id: {id}'
         #return render_template("books.html", data=data)
-        ## return redirect(url_for('/books'))
+        return redirect(url_for('books'))
         ##return render_template('home.html', primary_bold_color=fire_weed, trim_color=sha_green)
-        return '', 204  # No Content, successful deletion
+        #return '', 204  # No Content, successful deletion
     except sqlite3.Error as e:
         return f"Database error: {e}", 500
 
