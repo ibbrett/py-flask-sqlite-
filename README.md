@@ -18,6 +18,12 @@ Python Flask SQLite app
 python app.py
 ```
 
+may need to all create the virtual environment (before running)
+
+```
+python -m venv venv
+```
+
 ### pages (routes)
 
 1. Home: static, does nothing
