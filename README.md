@@ -18,6 +18,14 @@ Python Flask SQLite app
 python app.py
 ```
 
+### pages
+
+- Home: static, does nothing
+- Blog: static, does nothing
+- Books: added table for display of defined books
+  - click + button to navigate to form to add book
+  - books saved in SQLite db file named _numb.db_
+
 ### to do
 
 - add interactive content

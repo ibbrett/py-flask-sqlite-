@@ -15,7 +15,8 @@ connect.execute(
 
 @app.route('/')
 def home():
-    return render_template('home.html', primary_bold_color=fire_weed, trim_color=sha_green)
+    #return render_template('home.html', primary_bold_color=fire_weed, trim_color=sha_green)
+    return render_template('home.html')
 
 @app.route('/blog')
 def blog():
@@ -57,10 +58,7 @@ def del_book(id):
         connect.execute('DELETE FROM BOOKS WHERE id = ?', (id,))
         connect.commit()
         connect.close()
-        ##return f'Book id: {id}'
-        #return render_template("books.html", data=data)
         return redirect(url_for('books'))
-        ##return render_template('home.html', primary_bold_color=fire_weed, trim_color=sha_green)
         #return '', 204  # No Content, successful deletion
     except sqlite3.Error as e:
         return f"Database error: {e}", 500
