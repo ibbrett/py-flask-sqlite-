@@ -15,13 +15,9 @@ Python Flask SQLite app
 ### to run
 
 ```
-python app.py
-```
-
-may need to all create the virtual environment (before running)
-
-```
-python -m venv venv
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ python app.py
 ```
 
 ### pages (routes)
