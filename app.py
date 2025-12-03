@@ -43,7 +43,8 @@ def add_book():
                            (name, author))
             books.commit()
             # books.close()
-        return render_template("books.html")
+        #return render_template("books.html")
+        return redirect(url_for('books'))
     else:
         return render_template('book_form.html')
     
