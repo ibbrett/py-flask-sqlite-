@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block title %}Blog{% endblock %} {% block content
 %}
-<h1>Blog Page</h1>
+<h1 class="page-header">{{request.url_rule.endpoint}}</h1>
 <div class="card">
   <h1>Why are we here?</h1>
   <time datetime="2025-12-1">December 1, 2025</time>

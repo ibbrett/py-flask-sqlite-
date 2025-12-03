@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block title %}Home - My Site{% endblock %} {% block
 content %}
-<h1>Home Page</h1>
+<h1 class="page-header">{{request.url_rule.endpoint}}</h1>
 <dl>
   <dd>she tells me things</dd>
   <dd>i listen well</dd>

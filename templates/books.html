@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block title %}Books{% endblock %} {% block content
 %}
-<h1>Books</h1>
+<h1 class="page-header">{{request.url_rule.endpoint}}</h1>
 <span class="add"><a href="/add_book" title="new book">+</a></span>
 
 <table style="width: 100%">

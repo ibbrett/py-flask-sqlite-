@@ -18,13 +18,19 @@ Python Flask SQLite app
 python app.py
 ```
 
-### pages
+### pages (routes)
 
-- Home: static, does nothing
-- Blog: static, does nothing
-- Books: added table for display of defined books
-  - click + button to navigate to form to add book
-  - books saved in SQLite db file named _numb.db_
+1. Home: static, does nothing
+2. Blog: static, does nothing
+3. Books: added table for display of defined books
+
+- click + button to navigate to form to add book
+- books saved in SQLite db file named _numb.db_
+
+### notes
+
+- routes, including home/blog/books pages, defined in app.py
+- added Google Font for handwriting style on home page
 
 ### to do
 
