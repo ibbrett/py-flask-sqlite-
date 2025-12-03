@@ -34,5 +34,4 @@ python app.py
 
 ### to do
 
-- add interactive content
 - implement static folder for style, images, scripts
